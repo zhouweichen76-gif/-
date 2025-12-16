@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Site Template</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page">
+    <header class="nav">
+      <div class="nav__brand">
+        <span class="pill">Portfolio</span>
+        <span class="nav__name" id="nav-name">NAME</span>
+      </div>
+      <nav>
+        <ul class="nav__links">
+          <li><a href="#hero">首页</a></li>
+          <li><a href="#about">关于我</a></li>
+          <li><a href="#experience">经历</a></li>
+          <li><a href="#showcase">作品</a></li>
+          <li><a href="#contact">联系</a></li>
+        </ul>
+      </nav>
+      <div class="nav__cta">
+        <a class="ghost" id="nav-xhs" href="#" target="_blank" rel="noreferrer">小红书</a>
+        <a class="primary" id="nav-resume" href="#" download>下载简历</a>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero" class="section hero">
+        <div class="hero__bg">
+          <div class="blob blob-1"></div>
+          <div class="blob blob-2"></div>
+          <div class="mesh"></div>
+        </div>
+        <div class="hero__content">
+          <div class="hero__text card glass">
+            <p class="eyebrow">角色 / 状态</p>
+            <h1 id="hero-title">你好，我是 NAME</h1>
+            <p class="lede" id="hero-tagline">TAGLINE / SHORT BIO</p>
+            <div class="hero__actions">
+              <a class="primary" id="hero-resume" href="#" download>查看简历</a>
+              <a class="ghost" id="hero-xhs" href="#" target="_blank" rel="noreferrer">去小红书</a>
+            </div>
+            <div class="chips" id="hero-tags"></div>
+          </div>
+          <div class="hero__visual card glass">
+            <div class="photo-frame">
+              <img id="photo-hero" src="" alt="个人照片">
+            </div>
+            <div class="quick-facts" id="quick-facts"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section padded">
+        <div class="section__header">
+          <p class="eyebrow">ABOUT</p>
+          <h2>关于我</h2>
+          <p class="section__desc">用一段简洁的文字介绍自己，并展示个人照片。</p>
+        </div>
+        <div class="grid two">
+          <div class="card glass">
+            <h3>自我介绍</h3>
+            <p id="about-bio">刚出社会以为可以大展身手，结果被现实磨平的大学生。</p>
+            <div class="chips" id="about-tags"></div>
+            <div class="socials" id="social-links"></div>
+          </div>
+          <div class="card glass about__photo">
+            <div class="photo-frame">
+              <img id="photo-about" src="" alt="个人照片">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section padded">
+        <div class="section__header">
+          <p class="eyebrow">EXPERIENCES / PROJECTS</p>
+          <h2>经历与项目</h2>
+          <p class="section__desc">展示重点经历或代表性项目，附上亮点与链接。</p>
+        </div>
+        <div class="grid cards" id="experience-list"></div>
+      </section>
+
+      <section id="showcase" class="section padded">
+        <div class="section__header">
+          <p class="eyebrow">SHOWCASE</p>
+          <h2>作品集</h2>
+          <p class="section__desc">用卡片网格展示图片或界面，悬停有浮起与轻微阴影。</p>
+        </div>
+        <div class="grid gallery" id="showcase-grid"></div>
+      </section>
+
+      <section id="contact" class="section padded">
+        <div class="card glass contact">
+          <div>
+            <p class="eyebrow">CONTACT</p>
+            <h2>保持联系</h2>
+            <p class="section__desc">欢迎通过邮箱或社交媒体找到我，合作或交流想法。</p>
+          </div>
+          <div class="contact__actions">
+            <a class="primary" id="contact-email" href="mailto:">写邮件</a>
+            <a class="ghost" id="contact-xhs" href="#" target="_blank" rel="noreferrer">小红书</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span id="footer-name">NAME</span>
+      <div class="footer__links">
+        <a href="#hero">首页</a>
+        <a href="#about">关于</a>
+        <a href="#experience">经历</a>
+        <a href="#showcase">作品</a>
+        <a href="#contact">联系</a>
+      </div>
+      <span class="muted">© <span id="footer-year"></span> All rights reserved.</span>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
